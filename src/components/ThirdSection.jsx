@@ -2,9 +2,9 @@ import "../styles/ThirdSectionStyle.css"
 
 export function ThirdSection(){
     return(
-        <div className="third-section-main-container">
+        <div className="third-section-main-container" id="our-service" >
 
-            <div className="section-info-text">
+            <div className="section-info-text" >
                 <h3 className="main-text">Što nudimo?</h3>
                 <p className="sub-text">Sve što vam je potrebno za uspješan online nastup na jednom mjestu.</p>
             </div>
@@ -12,7 +12,7 @@ export function ThirdSection(){
             <div className="features">
                 <div className="feature-card">
                     <div className="feature-icon">
-                        <span class="material-symbols-outlined">
+                        <span className="material-symbols-outlined">
                             auto_awesome_mosaic
                         </span>
                     </div>
@@ -24,7 +24,7 @@ export function ThirdSection(){
 
                 <div className="feature-card">
                     <div className="feature-icon">
-                        <span class="material-symbols-outlined">
+                        <span className="material-symbols-outlined">
                             bolt
                         </span>
                     </div>
@@ -36,7 +36,7 @@ export function ThirdSection(){
 
                 <div className="feature-card">
                     <div className="feature-icon">
-                        <span class="material-symbols-outlined">
+                        <span className="material-symbols-outlined">
                             mobile
                         </span>
                     </div>

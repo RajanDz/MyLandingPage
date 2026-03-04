@@ -14,8 +14,8 @@ export function SectionOne(){
             </div>
             
             <div className="promotional-buttons">
-                <button className="free-call">Besplatna konzultacija</button>
-                <button className="our-service">Nase usluge</button>
+                <button className="free-call" onClick={() => document.getElementById("contact-us")?.scrollIntoView({behavior: "smooth"})}>Besplatna konzultacija</button>
+                <button className="our-service" onClick={() => document.getElementById("our-service")?.scrollIntoView({behavior: "smooth"})}>Nase usluge</button>
             </div>
         </div>
     )

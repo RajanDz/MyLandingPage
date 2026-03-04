@@ -1,0 +1,138 @@
+.contact-section-main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    width: 100%;
+    margin-top: 20px;
+    gap: 50px;
+    padding-bottom: 20px;
+}
+/* .contact-information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.contact-promo-text{
+    color: white;
+    font-size: 40px;
+}
+.contact-promo-sub-text{
+    color: white;
+    font-size: 20px;
+}
+h2{
+    margin: 5px 0;
+} */
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #1f0d63, #1f0d63, #0d2074);
+    padding: 40px 0;
+    width: 60%;
+    max-width: 1200px;
+    border-radius: 15px;
+    gap: 50px;
+}
+
+.contact-promotional-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-promotional-text h2{
+    margin: 1px;
+}
+
+.contact-head-text{
+    color: white;
+    font-size: 70px;
+    font-weight: bolder;
+}
+.contact-sub-text{
+    color: rgb(204, 204, 204);
+    font-size: 25px
+}
+.contact-option{
+    display: flex;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.input-container, .input-container-msg{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    width: 100%;
+    gap: 10px;
+}
+.input-container, .input-container-msg{
+    padding: 20px;
+}
+
+.contact-container span{
+    color: rgb(158, 158, 158);
+}
+input,textarea{
+    border-radius: 15px;
+    font-weight: 600;
+    border: 1px solid white;
+    width: 100%;
+}
+
+input:focus, textarea:focus{
+    outline: none;
+}
+textarea{
+    height: 150px;
+}
+.contact-option button{
+    width: 150px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px; 
+    font-weight: 600;
+    padding: 22px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #7b2ff7, #f107a3);
+}
+
+
+@media (max-width: 768px) {
+
+    .contact-container{
+        width: 90%;
+    }
+
+    .contact-head-text{
+        font-size: 30px;
+    }
+    .contact-sub-text{
+        font-size: 15px;
+    }
+    form{
+        flex-direction: column;
+    }
+    input {
+        padding: 10px;
+    }
+    .contact-promotional-text{
+        width: 70%;
+    }
+}

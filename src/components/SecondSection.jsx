@@ -1,6 +1,7 @@
 import "../styles/SecondSectionStyle.css";
 import gif from "../assets/marketingGif.gif";
 import instagram from "../assets/instagram-logo.png";
+import { Link } from "react-router-dom";
 export function SecondSections(){
     return(
         <div className="section-two-main-container">
@@ -18,25 +19,26 @@ export function SecondSections(){
 
                     <div className="performance-advice">
                         <div className="option">
-                            <span class="material-symbols-outlined">
+                            <span className="material-symbols-outlined">
                             task_alt
                             </span>
                             <p>SEO Optimizacija uključena</p>
                         </div>
                         <div className="option">
-                            <span class="material-symbols-outlined">
+                            <span className="material-symbols-outlined">
                             task_alt
                             </span>
                             <p>Integracija s društvenim mrežama</p>
                         </div>
                         <div className="option">
-                            <span class="material-symbols-outlined">
+                            <span className="material-symbols-outlined">
                             task_alt 
                             </span>
                             <p>Google Analytics analitika</p>
                         </div>
-
-                        <p className="more-about-us">Saznajte više o našem procesu</p>
+                        <Link to={"https://www.instagram.com/detail_web/"} >
+                            <p className="more-about-us">Saznajte više o našem procesu</p>
+                        </Link>
                     </div>
                 </div>
 

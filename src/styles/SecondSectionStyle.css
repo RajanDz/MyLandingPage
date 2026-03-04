@@ -50,6 +50,9 @@
     justify-content: flex-start;
     gap: 20px;
 }
+a {
+    text-decoration: none;
+}
 .option p{
     color: rgb(221, 219, 219);
 }
@@ -75,6 +78,7 @@
 @media (max-width: 767px) {
     .section-two-content{
         flex-direction: column;
+        width: 100%;
     }
 
     .promotional-gif{

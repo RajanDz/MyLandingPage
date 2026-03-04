@@ -1,0 +1,52 @@
+.footer-main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-top: 1px solid gray;
+    padding: 20px;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+.brand-container {
+    display: flex;
+    align-items: center;
+    color: white;
+    
+}
+.brand-container img{
+    height: 80px;
+}
+
+.rules-and-policy{
+    color: rgb(199, 192, 192);
+}
+
+.social-media span{
+    font-size: 30px;
+    color: rgb(199, 192, 192);
+    transition: transform 0.2s ease-in-out;
+    transform: translateY(0);
+}
+
+.social-media span:hover{
+    cursor: pointer;
+    transform: translateY(-3px)
+}
+
+@media (max-width: 768px) {
+    
+
+    .footer-content{
+        width: 100%;
+    }
+
+    .rules-and-policy{
+        font-size: 12px;
+    }
+}

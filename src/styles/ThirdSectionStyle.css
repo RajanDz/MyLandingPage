@@ -13,7 +13,6 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-
 }
 .main-text{
     color: white;
@@ -23,6 +22,7 @@
 
 .sub-text{
     color: rgb(212, 212, 212);
+    font-size: 20px;
 }
 
 .features{
@@ -33,7 +33,13 @@
     width: 100%;
 }
 .feature-card{
-    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 500px;
+    width: 450px;
+
     background: linear-gradient(
     145deg,
     #111827,
@@ -84,10 +90,15 @@
 }
 
 @media (max-width: 767px) {
+
+    .third-section-main-container{
+        width: 100%;
+    }
     .features{
         flex-direction: column;
     }
     .feature-card{
+        height: 600px;
         width: 80%;
     }
 }

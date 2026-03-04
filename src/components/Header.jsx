@@ -10,9 +10,8 @@ export function Header(){
                     <h2>Detail Web</h2>
                 </div>
                 <div className="header-right-side">
-                    <p className="nav-link">Usluge</p>
-                    <p className="nav-link">O nama</p>
-                    <p className="promotional-button">Zatrazite ponudu</p>
+                    <p className="nav-link" onClick={() => document.getElementById("our-service")?.scrollIntoView({behavior: "smooth"})}>Usluge</p>
+                    <p className="promotional-button" onClick={() => document.getElementById("contact-us")?.scrollIntoView({behavior: "smooth"})}>Zatrazite ponudu</p>
                 </div>
             </div>
         </div>
