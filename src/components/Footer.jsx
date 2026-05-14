@@ -15,7 +15,7 @@ export function Footer(){
                 </div>
 
                 <div className="social-media">
-                    <Link to={"https://www.instagram.com/detail_web/"} >
+                    <Link to={"https://www.instagram.com/detail__web/"} >
                         <span className="fa fa-instagram"></span>
                     </Link>
                 </div>
