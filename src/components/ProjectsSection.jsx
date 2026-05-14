@@ -1,15 +1,15 @@
 import "../styles/ProjectsSectionStyle.css";
 import { Link } from "react-router-dom";
-import monamourProjekatImg from "../assets/monamourProjekat.jpg"
+import barberImg from "../assets/barberBanner.jpg"
 import realEstateProjekatImg from "../assets/realEstateProjekat.jpg"
 import beautyImg from "../assets/beautySalon.jpg";
 const projects = [
     {
         id: 1,
-        name: "Monamour",
-        description: "Moderan portfolio za Monamour butik.",
-        image: monamourProjekatImg,
-        link: "https://www.monamourmne.online/",
+        name: "Frizerski salon(Demo)",
+        description: "Moderan portfolio za Frizerski salon.",
+        image: barberImg,
+        link: "https://barbershopdemoverzija.netlify.app/",
     },
     {
         id: 2,
