@@ -1,12 +1,15 @@
 import "../styles/ProjectsSectionStyle.css";
 import { Link } from "react-router-dom";
-import barberImg from "../assets/barberBanner.jpg"
-import realEstateProjekatImg from "../assets/realEstateProjekat.jpg"
+import barberImg from "../assets/barberBanner.jpg";
+import realEstateProjekatImg from "../assets/realEstateProjekat.jpg";
 import beautyImg from "../assets/beautySalon.jpg";
+import fitnessappimg from "../assets/fitnessappimg.jpg";
+import beautysalonimg from "../assets/beautysalonimg.jpg";
+
 const projects = [
     {
         id: 1,
-        name: "Frizerski salon(Demo)",
+        name: "Frizerski salon (Demo)",
         description: "Moderan portfolio za Frizerski salon.",
         image: barberImg,
         link: "https://barbershopdemoverzija.netlify.app/",
@@ -25,6 +28,20 @@ const projects = [
         image: beautyImg,
         link: "https://beautysalonpodgorica.netlify.app/",
     },
+    {
+        id: 4,
+        name: "Fitness aplikacija (Demo)",
+        description: "Kreirali smo aplikaciju za Fitness trenere koja se istice dizajnom i raznim mogucnostima.",
+        image: fitnessappimg,
+        link: "https://modern-fitness-solution.vercel.app/me?fbclid=PAdGRleASQtbBleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAafu6xjam7jytjlOWIeUqAcNAUN3_EcXWG92qIcF6hmLGwgDPKmUKcFfmvfs1Q_aem_GKgXGbO840ICWvWy3MCuzw",
+    },
+    {
+        id: 5,
+        name: "Beauty salon (Demo)",
+        description: "Kreirali smo aplikaciju za Beauty salon koja prestavlja moderan dizajn, prikaz usluga i kontakt salona.",
+        image: beautysalonimg,
+        link: "https://frolicking-paprenjak-43fdaf.netlify.app/",
+    },
 ];
 
 export function ProjectsSection() {
@@ -35,30 +52,32 @@ export function ProjectsSection() {
                 <p className="sub-text">Pogledajte neke od naših najnovijih radova.</p>
             </div>
 
-            <div className="projects-grid">
-                {projects.map((project) => (
-                    <div className="project-card" key={project.id}>
-                        <div className="project-image-wrapper">
-                            {project.image ? (
-                                <img src={project.image} alt={project.name} className="project-image" />
-                            ) : (
-                                <div className="project-image-placeholder">
-                                    <span className="material-symbols-outlined">web</span>
-                                </div>
-                            )}
-                            <div className="project-image-overlay"></div>
-                        </div>
+            <div className="projects-scroll-wrapper">
+                <div className="projects-track">
+                    {projects.map((project) => (
+                        <div className="project-card" key={project.id}>
+                            <div className="project-image-wrapper">
+                                {project.image ? (
+                                    <img src={project.image} alt={project.name} className="project-image" />
+                                ) : (
+                                    <div className="project-image-placeholder">
+                                        <span className="material-symbols-outlined">web</span>
+                                    </div>
+                                )}
+                                <div className="project-image-overlay"></div>
+                            </div>
 
-                        <div className="project-card-body">
-                            <h4 className="project-name">{project.name}</h4>
-                            <p className="project-description">{project.description}</p>
-                            <Link to={project.link} target="_blank" className="project-link">
-                                <span className="material-symbols-outlined">open_in_new</span>
-                                Pogledaj projekt
-                            </Link>
+                            <div className="project-card-body">
+                                <h4 className="project-name">{project.name}</h4>
+                                <p className="project-description">{project.description}</p>
+                                <Link to={project.link} target="_blank" className="project-link">
+                                    <span className="material-symbols-outlined">open_in_new</span>
+                                    Pogledaj projekt
+                                </Link>
+                            </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
         </div>
     );
